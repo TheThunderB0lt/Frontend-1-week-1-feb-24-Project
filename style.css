@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #333; 
+    padding: 20px 0;
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+    z-index: 1000; 
+}
+
+/* Navigation Styles */
+nav {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.logo {
+    color: white; 
+    font-size: 20px; 
+    text-decoration: none; 
+}
+
+ul {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+}
+
+li {
+    margin-left: 20px; 
+}
+
+.ref {
+    color: white; 
+    text-decoration: none; 
+    font-size: 14px; 
+    transition: color 0.3s; 
+}
+
+.ref:hover {
+    color: #ddd;
+}
+
+
+
+/* Table Styles */
+#books {
+    font-size: 20px;
+    margin-top: 200px;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 75%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    font-size: 16px;
+    width: 100%; 
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+
+
+thead {
+    background-color: #eaeef38a;
+    color: rgb(0, 0, 0);
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+    font-size: 15px;
+}
+
+th {
+    font-weight: bold;
+}
+
+.ref1 {
+    text-decoration: none;
+    color: #0a53f1;
+    font-weight: 700;
+}
+
+.nested-table {
+    border-collapse: collapse;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.nested-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.nested-table tr:first-child td {
+    font-weight: bold;
+}
+
+
+
+/* Register Section */
+#register {
+    margin-top: 10%;
+    background-color: #ffffff;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Form Styles */
+form {
+    font-size: 16px;
+    width: 100%; 
+    margin-top: 20px;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block; 
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+

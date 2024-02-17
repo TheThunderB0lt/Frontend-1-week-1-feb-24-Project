@@ -1,16 +1,206 @@
 <!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library System</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">Library System</a>
+            <ul>
+                <li><a href="#" class="ref">Home</a></li>
+                <li><a href="#books" class="ref">Books</a></li>
+                <li><a href="#register" class="ref">Register</a></li>
+                <li><a href="#contact" class="ref">Contact Us</a></li>
+                <li><a href="#logout" class="ref">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Books-table -->
+        <section id="books">
+            <h2>Books</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Genre</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <a href="#" class="ref1">The Power of Your Subconscious Mind</a>
+                            <table class="nested-table">
+                                <tr>
+                                    <td>Publication Date:</td>
+                                    <td>1 February 2015</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count:</td>
+                                    <td>256</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN:</td>
+                                    <td>978-8172345662</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Joseph Murphy</td>
+                        <td>Spiritual Self-Help Book</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <!-- Book 2 -->
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <a href="#" class="ref1">How to Win Friends and Influence People</a>
+                            <table class="nested-table">
+                                <tr>
+                                    <td>Publication Date:</td>
+                                    <td>12 October 2020</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count:</td>
+                                    <td>240</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN:</td>
+                                    <td>978-8194790891</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Dale Carnegie</td>
+                        <td>Public Speaking Reference</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <!-- Book 3 -->
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <a href="#" class="ref1">THINK AND GROW RICH</a>
+                            <table class="nested-table">
+                                <tr>
+                                    <td>Publication Date:</td>
+                                    <td>5 January 2020</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count:</td>
+                                    <td>241</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN:</td>
+                                    <td>978-935333152</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Napoleon Hill</td>
+                        <td>Microeconomics</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <!-- Book 4 -->
+                    <tr>
+                        <td>4</td>
+                        <td>
+                            <a href="#" class="ref1">The Psychology of Money</a>
+                            <table class="nested-table">
+                                <tr>
+                                    <td>Publication Date:</td>
+                                    <td>1 September 2020</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count:</td>
+                                    <td>252</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN:</td>
+                                    <td>978-9390166268</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Morgan Housel</td>
+                        <td>Economics</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <!-- Book 5 -->
+                    <tr>
+                        <td>5</td>
+                        <td>
+                            <a href="#" class="ref1">Rich Dad Poor Dad</a>
+                            <table class="nested-table">
+                                <tr>
+                                    <td>Publication Date:</td>
+                                    <td>1 January 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count:</td>
+                                    <td>336</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN:</td>
+                                    <td>978-1612681139</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Robert T. Kiyosaki</td>
+                        <td>Finance book</td>
+                        <td>Available</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </section>
         
-        <script src="" async defer></script>
-    </body>
+        <!-- Registration-form -->
+        <section id="register">
+            <h2>Register</h2>
+            <form action="#" method="post" id="registration-form">
+                <div class="form-group">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="5" max="100" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+    
+</body>
 </html>
